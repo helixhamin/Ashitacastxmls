@@ -1,0 +1,140 @@
+<ashitacast>
+	<settings>
+		<buffupdate>true</buffupdate>
+		<statusupdate>true</statusupdate>
+		<hpupdate>true</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="Idle">
+			<main>Scimitar +1</main>
+			<sub>Pelte</sub>
+			<range>Rogetsurin</range>
+			<head>Republic Cap</head>
+			<neck>Bird Whistle</neck>
+			<lear>Energy Earring +1</lear>
+			<rear>Energy Earring +1</rear>
+			<body>Republic Harness</body>
+			<hands>Battle Gloves</hands>
+			<legs>Phl. Trousers</legs>
+			<feet>Leaping Boots</feet>
+			<waist>Warrior's Belt +1</waist>
+			<ring1>Balance Ring +1</ring1>
+			<ring2>Balance Ring +1</ring2>
+			<back>Besieger Mantle</back>
+		</set>
+		<set name="Str" baseset="StrDex">
+		</set>
+		<set name="StrDex" baseset="Idle">
+			<!--<head>Ryl.Ftm. Bandana</head>-->
+			<neck>Armiger's Lace</neck>
+			<!--<lear>Energy Earring +1</lear>
+			<rear>Energy Earring +1</rear>
+			<body>Solid Mail</body>
+			<hands>Battle Gloves</hands>
+			<legs>Solid Cuisses</legs>
+			<feet>Leaping Boots</feet>
+			<waist>Friar's Rope</waist>-->
+			<ring1>Courage Ring +1</ring1>
+			<ring2>Courage Ring +1</ring2>
+			<!--<back>Traveler's Mantle</back>-->
+		</set>
+		<set name="StrInt" baseset="StrDex">
+		</set>
+		<set name="Int">
+		</set>
+		<set name="StrMnd" baseset="StrDex">
+		</set>
+		<set name="Mnd" baseset="StrDex">
+		</set>
+		<set name="Dex" baseset="StrDex">
+		</set>
+		<set name="StrDexInt" baseset="StrDex">
+		</set>
+		<set name="MndVit">
+		</set>
+		<set name="StrVit" baseset="StrDex">
+		</set>
+		<set name="Agi">
+		</set>
+		<set name="Chr">
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_status="engaged"><equip set="tp" /></if>
+		<else><equip set="Idle" /></else>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+		<if ad_name="Sandspin|Queasyshroom|Sheep Song|Cursed Sphere|Blastbomb|Soporific|Bomb Toss"><equip set="Int" />
+			<if ad_name="Sandspin"><addtochat>Amorphs -> Strong=Birds, Weak=Aquans</addtochat></if>
+			<if ad_name="Queasyshroom|Soporific"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>
+			<if ad_name="Sheep Song"><addtochat>Beasts -> Strong=Lizards, Weak=Plantoids</addtochat></if>
+			<if ad_name="Cursed Sphere"><addtochat>Vermin -> Strong=Plantoids, Weak=Lizards</addtochat></if>
+		</if>
+		
+		<if ad_name="Pollen"><equip set="MndVit|Healing Breeze" /></if>
+		
+		<if ad_name="Blood Drain">
+			<if ad_name="Blood Drain"><addtochat>Birds -> Strong=Aquans, Weak=Amorphs</addtochat></if>
+		</if>
+		
+		<if ad_name="Foot Kick"><equip set="StrDex" />
+			<if ad_name="Foot Kick"><addtochat>Beasts -> Strong=Lizards, Weak=Plantoids</addtochat></if>
+		</if>
+		
+		<if ad_name="Power Attack|Sprout Smack"><equip set="Vit" />
+			<if ad_name="Foot Kick"><addtochat>Vermin -> Strong=Plantoids, Weak=Lizards</addtochat></if>
+			<if ad_name="Sprout Smack"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>
+		</if>
+		
+		<if ad_name="Wild Oats|Feather Storm|Helldive"><equip set="Agi" />
+			<if ad_name="Wild Oats"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>
+			<if ad_name="Helldive"><addtochat>Birds -> Strong=Aquans, Weak=Amorphs</addtochat></if>
+		</if>
+		
+		<if ad_name="Battle Dance"><equip set="Str" />
+		</if>
+		
+		<if ad_name="Head Butt"><equip set="StrInt" />
+		</if>
+		
+		<if ad_name="Bludgeon"><equip set="Chr" />
+			<if ad_name="Bludgeon"><addtochat>Arcana "<->" Undead</addtochat></if>
+		</if>
+		
+		<if ad_name="Claw Cyclone"><equip set="Dex" />
+			<if ad_name="Claw Cyclone"><addtochat>Beasts -> Strong=Lizards, Weak=Plantoids</addtochat></if>
+		</if>
+		
+		<if ad_name="Poison Breath"><equip set="Mnd" />
+			<if ad_name="Poison Breath"><addtochat>Undead "<->" Arcana</addtochat></if>
+		</if>
+		
+		<if ad_name="Screwdriver"><equip set="StrMnd" />
+			<if ad_name="Screwdriver"><addtochat>Aquans -> Strong=Amorphs, Weak=Birds</addtochat></if>
+		</if>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<if ad_name="Fast Blade"><equip set="StrDex" /></if>
+		<if ad_name="Chant du Cygne"><equip set="Dex" /></if>
+		<if ad_name="Burning Blade|Red Lotus Blade"><equip set="StrInt" /></if>
+		<if ad_name="Flat Blade|Circle Blade|Vorpal Blade"><equip set="Str" /></if>
+		<if ad_name="Shining Blade|Seraph Blade|Swift Blade|Savage Blade|Sanguine Blade|Knights of Round|Uriel Blade"><equip set="StrMnd" /></if>
+		<if ad_name="Requiescat"><equip set="Mnd" /></if>
+		<if ad_name="Expiacion"><equip set="StrDexInt" /></if>
+	</weaponskill>
+</ashitacast>

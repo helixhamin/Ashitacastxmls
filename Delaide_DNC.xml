@@ -1,0 +1,85 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand" lock="true" priority="99">
+			<main priority="1" lock="true">Federation Kukri</main>
+			<sub>Federation Kukri</sub>
+			<ranged>None</ranged>
+			<ammo>Mille. Sachet</ammo>
+			<head>Mrc.Cpt. Headgear</head>
+			<neck>Peacock Charm</neck>
+			<lear>Dodge Earring</lear>
+			<rear>Dodge Earring</rear>
+			<body>Shade Harness +1</body>
+			<hands>Combat Mittens +1</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Jaeger Ring</rring>
+			<back>Wolf mantle +1</back>
+			<waist>Mrc.Cpt. Belt</waist>
+			<legs>Mrc.Cpt. Hose</legs>
+			<feet>Shade leggings +1</feet>
+		</set>
+		<set name="Dex"> <!--DEX modifiers-->
+			<head>Emperor Hairpin</head>
+			<neck>Spike necklace</neck>
+			<!--<lear></lear>
+			<rear></rear>-->
+			<body>Garrison Tunica</body>
+			<hands>Custom F gloves</hands>
+			<!--<lring></lring>-->
+			<rring>Deft Ring +1</rring>
+			<!--<back></back>
+			<waist></waist>-->
+			<legs>Garrison Hose</legs>
+			<feet>Winged Boots +1</feet>
+		</set>
+		<set name="Dexint"> <!--DEX, INT modifiers-->
+			<head>Emperor Hairpin</head>
+			<neck>Spike necklace</neck>
+			<!--<lear></lear>
+			<rear></rear>-->
+			<body>Garrison Tunica</body>
+			<hands>Custom F gloves</hands>
+			<!--<lring></lring>-->
+			<rring>Tamas Ring</rring>
+			<!--<back></back>
+			<waist></waist>-->
+			<legs>Garrison Hose</legs>
+			<feet>Winged Boots +1</feet>
+		</set>
+		<set name="Curing"> <!--VIT, CHR modifiers-->
+			<head>Noble's Ribbon</head>
+			<neck>Bird Whistle</neck>
+			<lear>Cassie Earring</lear>
+			<rear>Mercenary's Earring</rear>
+			<body>Custom Vest</body>
+			<!--<hands></hands>-->
+			<lring>Sattva Ring</lring>
+			<rring>Loyalty Ring +1</rring>
+			<!--<back></back>-->
+			<waist>Warrior's Belt +1</waist>
+			<legs>Custom Pants</legs>
+			<feet>Power Sandals</feet>
+		</set>
+	</sets>
+
+	<idlegear>
+		<equip set="Stand" />
+	</idlegear>
+	
+	<jobability>
+		<if ad_name="Curing Waltz*"><equip set="Curing" /></if>
+	</jobability>
+	
+	<weaponskill>
+		<if ad_name="Wasp Sting"><equip set="Dex" /></if>
+		<if ad_name="Gust Slash"><equip set="Dexint" /></if>
+		<if ad_name="Shadowstitch"><equip set="Curing" /></if>
+		<if ad_name="Viper Bite"><equip set="Dex" /></if>
+	</weaponskill>
+</ashitacast>

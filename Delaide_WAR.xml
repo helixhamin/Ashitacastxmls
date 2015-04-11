@@ -1,0 +1,101 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<main>Warrior's Axe</main>
+			<sub>Military Pick</sub>
+			<ranged>Rikonodo</ranged>
+			<ammo>Holy Bolt</ammo>
+			<head>Emperor Hairpin</head>
+			<neck>Peacock Charm</neck>
+			<lear>Beetle Earring +1</lear>
+			<rear>Beetle Earring +1</rear>
+			<body>Custom Vest</body>
+			<hands>Ryl.Sqr. Mufflers</hands>
+			<lring>Jaeger Ring</lring>
+			<rring>Rajas Ring</rring>
+			<back>Exact. Mantle +1</back>
+			<waist>Sarashi</waist>
+			<legs>Republic Subligar</legs>
+			<feet>Winged Boots +1</feet>
+		</set>
+		<set name="Raging"> <!--STR modifier-->
+			<!--<head></head>-->
+			<neck>Spike Necklace</neck>
+			<lear>Cassie Earring</lear>
+			<rear>Giant's earring</rear>
+			<!--<body></body>-->
+			<hands>Custom F Gloves</hands>
+			<lring>Puissance Ring +1</lring>
+			<!--<rring></rring>
+			<back></back>-->
+			<waist>Brave Belt</waist>
+			<legs>Garrison Hose</legs>
+			<feet>Mtt. Leggings +1</feet>
+		</set>
+		<!--<include>
+			<item>Warrior's Axe</item>
+			<item>Military Pick</item>
+			<item>Rikonodo</item>
+			<item>Emperor Hairpin</item>
+			<item>Peacock Charm</item>
+			<item>Spike Necklace</item>
+			<item>Beetle Earring +1</item>
+			<item>Beetle Earring +1</item>
+			<item>Cassie Earring</item>
+			<item>Giant's earring</item>
+			<item>Custom Vest</item>
+			<item>Ryl.Sqr. Mufflers</item>
+			<item>Custom F Gloves</item>
+			<item>Jaeger Ring</item>
+			<item>Rajas Ring</item>
+			<item>Puissance Ring +1</item>
+			<item>Exact. Mantle +1</item>
+			<item>Sarashi</item>
+			<item>Brave Belt</item>
+			<item>Republic Subligar</item>
+			<item>Garrison Hose</item>
+			<item>Winged Boots +1</item>
+			<item>Mtt. Leggings +1</item>
+			<item quantity="all">Holy Bolt</item>
+			<item quantity="all"></item>
+			<item quantity="all"></item>
+		</include>-->
+	</sets>
+
+	<idlegear>
+		<equip set="Stand" />
+	</idlegear>
+
+	<!--<premagic>
+		<equip set="Precast" />
+		<if ad_name="Utsusemi*"><equip><neck>Magoraga Beads</neck></equip></if>
+	</premagic>
+
+	<midmagic>
+		<equip set="Stand" />
+		<if ad_name="Utsusemi*"><equip><feet>Iga Kyahan +2</feet></equip></if>
+	</midmagic>-->
+
+	<weaponskill>
+		<if ad_name="Raging Axe"><equip set="Raging" /></if>
+		<if ad_name="Smash Axe"><equip set="Raging" /></if>
+		<if ad_name="Gale Axe"><equip set="Raging" /></if>
+		<if ad_name="Avalanche Axe"><equip set="Raging" /></if>
+		<if ad_name="Spinning Axe"><equip set="Raging" /></if>
+		<if ad_name="Rampage"><equip set="Raging" /></if>
+		<if ad_name="Shield Break"><equip set="Raging" /></if>
+		<if ad_name="Iron Tempest"><equip set="Raging" /></if>
+		<if ad_name="Sturmwind"><equip set="Raging" /></if>
+		<if ad_name="Armor Break"><equip set="Raging" /></if>
+		<if ad_name="Hard Slash"><equip set="Raging" /></if>
+		<if ad_name="Power Slash"><equip set="Raging" /></if>
+		<if ad_name="Frostbite"><equip set="Raging" /></if>
+		<if ad_name="Freezebite"><equip set="Raging" /></if>
+	</weaponskill>
+</ashitacast>

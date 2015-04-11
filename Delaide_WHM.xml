@@ -1,0 +1,81 @@
+<ashitacast>
+	<settings>
+		<buffupdate>true</buffupdate>
+		<statusupdate>true</statusupdate>
+		<hpupdate>true</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="Idle">
+			<main>Elm Pole +1</main>
+			<sub>Lizard Strap +1</sub>
+			<ammo>Holy Ampulla</ammo>
+			<head>Trump Crown</head>
+			<neck>Holy Phial</neck>
+			<lear>Healing Earring</lear>
+			<rear>Energy Earring +1</rear>
+			<body>Bishop's robe +1</body>
+			<hands>Dvt. Mitts +1</hands>
+			<legs>Custom Pants</legs>
+			<feet>Mannequin Pumps</feet>
+			<waist>Mohbwa Sash +1</waist>
+			<ring1>Carect Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>White Cape +1</back>
+		</set>
+		<set name="StrMnd">
+			<!--<main></main>
+			<sub></sub>
+			<ammo></ammo>
+			<head></head>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>-->
+			<waist>Friar's Rope</waist>
+			<ring1>Solace Ring +1</ring1>
+			<!--<ring2></ring2>
+			<back></back>-->
+		</set>
+		<set name="Healing">
+			<!--<main></main>
+			<sub></sub>
+			<ammo></ammo>
+			<head></head>
+			<body></body>-->
+			<hands>Zealot's Mitts</hands>
+			<!--<legs></legs>
+			<feet></feet>-->
+			<waist>Friar's Rope</waist>
+			<!--<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<equip set="Idle" />
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+		<if ad_skill="HealingMagic">
+			<equip set="Healing" />
+		</if>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<if ad_name="Shining Strike"><equip set="StrMnd" /></if>
+		<if ad_name="Seraph Strike"><equip set="StrMnd" /></if>
+	</weaponskill>
+</ashitacast>

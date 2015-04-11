@@ -1,0 +1,105 @@
+<ashitacast>
+	<settings>	
+		<buffupdate>true</buffupdate>
+		<statusupdate>true</statuspdate>
+		<hpupdate>true</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="Stand">
+			<main priority="1" lock="true">Yoshimitsu</main>
+			<sub>Perdu Blade</sub>
+			<range>None</range>
+			<ammo>Fire Bomblet</ammo>
+			<head>Denali Bonnet</head>
+			<neck>Evasion torque</neck>
+			<lear>Suppanomimi</lear>
+			<rear>Ethereal Earring</rear>
+			<body>Ninja Chainmail</body>
+			<hands>Enkidu's Mittens</hands>
+			<lring>Sniper's Ring +1</lring>
+			<rring>Sniper's Ring +1</rring>
+			<back>Toreador's Cape</back>
+			<waist>Koga Sarashi</waist>
+			<legs>Koga Hakama</legs>
+			<feet>Fuma Sune-Ate</feet>
+		</set>
+		<set name="tp"  baseset="Stand">
+			<hands>Dusk Gloves +1</hands>
+		</set>
+		<set name="Ranged"  baseset="Stand"> <!--Ranged stats and AGI-->
+			<head>Enkidu's Cap</head>
+			<neck>Peacock Charm</neck>
+			<lear>Drone Earring</lear>
+			<rear>Drone Earring</rear>
+			<body>Kirin's Osode</body>
+			<hands>Ninja Tekko</hands>
+			<back>Agile Mantle</back>
+			<waist>Precise Belt</waist>
+			<legs>Ninja Hakama</legs>
+			<feet>Enkidu's Leggings</feet>
+		</set>
+		<set name="StrDex"> <!--STR, DEX modifiers-->
+			<head>Voyager Sallet</head>
+			<neck>Chivalrous Chain</neck>
+			<lear>Hollow Earring</lear>
+			<rear>Pixie Earring</rear>
+			<body>Kirin's Osode</body>
+			<lring>Rajas Ring</lring>
+			<rring>Adroit Ring +1</rring>
+			<back>Cerb. Mantle +1</back>
+			<waist>Warwolf Belt</waist>
+			<legs>Byakko's Haidate</legs>
+			<feet>Enkidu's Leggings</feet>
+		</set>
+		<set name="StrInt" baseset="StrDex"> <!--STR, INT modifiers-->
+			<lear>Morion Earring +1</lear>
+			<rear>Minuet Earring</rear>
+			<hands>Enkidu's Mittens</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Tamas Ring</rring>
+			<back>Cerb. Mantle +1</back>
+			<waist>Warwolf Belt</waist>
+			<legs>Shura Haidate +1</legs>
+			<feet>Mountain Gaiters</feet>
+		</set>
+		<set name="Ninjitsu"> <!--Ninja magic modifiers-->
+			<head>Ninja Hatsuburi</head>
+			<neck>Ninjutsu Torque</neck>
+			<rear>Ninjutsu Earring</rear>
+			<waist>Resolute Belt</waist>
+			<feet>Koga Kyahan</feet>
+		</set>
+	</sets>
+	
+	<idlegear>
+		<if p_status="engaged"><equip set="tp" /></if>
+		<else><equip set="Stand" />
+			<if e_time="<6.00|>18.00"><equip><feet>Ninja Kyahan</feet></equip><addtochat>Triggered time</addtochat></if>
+		</else>
+	</idlegear>
+	
+	<midmagic>
+		<equip set="Ninjitsu" />
+		<if ad_name="Utsusemi*"><equip><waist>Resolute Belt</waist></equip></if>
+	</midmagic>
+	
+	<midranged>
+		<equip set="Ranged" />
+	</midranged>
+	
+	<weaponskill>
+		<if ad_name="Blade: Rin|Blade: Retsu|Blade: Ei|Tachi: Enpi|Tachi: Ten|Tachi: Ku|Blade: Jin"><equip set="StrDex" />
+			<if e_time="<6.00|>18.00">
+			<equip><hands>Koga Tekko</hands></equip>
+			<equip><feet>Koga Kyahan</feet></equip></if>
+			<if ad_name="Blade: Jin">
+				<equip><neck>Breeze Gorget</neck></equip>
+			</if>
+		</if>
+		<if ad_name="Blade: Teki|Blade: To|Blade: Chi"><equip set="StrInt" />
+			<if e_time="<6.00|>18.00"><equip><hands>Koga Tekko</hands></equip></if>
+		</if>
+	</weaponskill>
+	
+</ashitacast>

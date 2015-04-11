@@ -1,0 +1,52 @@
+<ashitacast>
+	<settings>
+		<buffupdate>true</buffupdate>
+		<statusupdate>true</statusupdate>
+		<hpupdate>true</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="Idle">
+			<main>Pestle</main>
+			<sub>None</sub>
+			<ammo>Fortune Egg</ammo>
+			<!--<head>Traveler's Hat</head>-->
+			<neck>Justice Badge</neck>
+			<lear>Energy Earring +1</lear>
+			<rear>Energy Earring +1</rear>
+			<body>Kingdom Tunic</body>
+			<hands>Linen Cuffs +1</hands>
+			<legs>Linen Slops +1</legs>
+			<feet>Light Soleas</feet>
+			<waist>Heko Obi +1</waist>
+			<ring1>Eremite's Ring +1</ring1>
+			<ring2>Eremite's Ring +1</ring2>
+			<back>Mist Silk Cape</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+		<cmd input="/trigger1">
+            <gearlock delay="5" />
+            <equip set="Idle" />
+        </cmd>
+	</inputcommands>
+	<idlegear>
+		<equip set="Idle" />
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

@@ -23,42 +23,247 @@
 			<ring2>Balance Ring +1</ring2>
 			<back>Besieger Mantle</back>
 		</set>
-		<set name="Str" baseset="StrDex">
-		</set>
-		<set name="StrDex" baseset="Idle">
-			<!--<head>Ryl.Ftm. Bandana</head>-->
+		
+		<set name="Str" baseset="Idle">
+			<!--<head></head>-->
 			<neck>Armiger's Lace</neck>
-			<!--<lear>Energy Earring +1</lear>
-			<rear>Energy Earring +1</rear>
-			<body>Solid Mail</body>
-			<hands>Battle Gloves</hands>
-			<legs>Solid Cuisses</legs>
-			<feet>Leaping Boots</feet>
-			<waist>Friar's Rope</waist>-->
+			<!--<lear></lear>
+			<rear></rear>-->
+			<body>Nemain's Robe</body>
+			<hands>Linen Cuffs +1</hands>
+			<!--<legs></legs>
+			<feet></feet>
+			<waist></waist>-->
 			<ring1>Courage Ring +1</ring1>
 			<ring2>Courage Ring +1</ring2>
-			<!--<back>Traveler's Mantle</back>-->
+			<!--<back></back>-->
 		</set>
-		<set name="StrInt" baseset="StrDex">
+		
+		<set name="StrDex" baseset="Str">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>
+			<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
 		</set>
-		<set name="Int">
+		
+		<set name="StrVit" baseset="Str">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>
+			<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
 		</set>
-		<set name="StrMnd" baseset="StrDex">
+		
+		<set name="StrAgi" baseset="Str">
+			<head>San. Bandana</head>
+			<!--<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>
+			<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
 		</set>
-		<set name="Mnd" baseset="StrDex">
+		
+		<set name="StrInt" baseset="Str">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>
+			<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
 		</set>
-		<set name="Dex" baseset="StrDex">
+		
+		<set name="StrMnd" baseset="Str">
+			<head>Traveler's Hat</head>
+			<!--<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>-->
+			<waist>Friar's Rope</waist>
+			<!--<ring1></ring1>
+			<ring2></ring2>-->
+			<back>Mist Silk Cape</back>
 		</set>
-		<set name="StrDexInt" baseset="StrDex">
+		
+		<set name="StrDexInt" baseset="Str">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>
+			<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
 		</set>
-		<set name="MndVit">
+		
+		<set name="Dex" baseset="Idle">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>
+			<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
 		</set>
-		<set name="StrVit" baseset="StrDex">
+		
+		<set name="DexInt" baseset="Dex">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>
+			<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
 		</set>
-		<set name="Agi">
+		
+		<set name="VitIntMndChr" baseset="Idle">
+			<head>Entrancing Ribbon</head>
+			<neck>Armiger's Lace</neck>
+			<!--<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>-->
+			<ring1>Stamina Ring +1</ring1>
+			<ring2>Stamina Ring +1</ring2>
+			<back>Mist Silk Cape</back>
 		</set>
-		<set name="Chr">
+		
+		<set name="Agi" baseset="Idle">
+			<head>San. Bandana</head>
+			<neck>Wing Pendant</neck>
+			<!--<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>-->
+			<ring1>Reflex Ring +1</ring1>
+			<ring2>Reflex Ring +1</ring2>
+			<!--<back></back>-->
 		</set>
+		
+		<set name="Int" baseset="Idle">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>-->
+			<ring1>Kldg. Ring +1</ring1>
+			<ring2>Kldg. Ring +1</ring2>
+			<!--<back></back>-->
+		</set>
+		
+		<set name="IntMnd" baseset="Int">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>-->
+			<waist>Friar's Rope</waist>
+			<!--<ring1></ring1>
+			<ring2></ring2>-->
+			<back>Mist Silk Cape</back>
+		</set>
+		
+		<set name="Mnd" baseset="Idle">
+			<head>Traveler's Hat</head>
+			<neck>Justice Badge</neck>
+			<!--<lear></lear>
+			<rear></rear>
+			<body></body>-->
+			<hands>Zealot's Mitts</hands>
+			<!--<legs></legs>
+			<feet></feet>-->
+			<waist>Friar's Rope</waist>
+			<ring1>Trq. Ring +1</ring1>
+			<ring2>Trq. Ring +1</ring2>
+			<back>Mist Silk Cape</back>
+		</set>
+		
+		<set name="MndVit" baseset="Mnd">
+			<!--<head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>
+			<ring1></ring1>
+			<ring2></ring2>
+			<back></back>-->
+		</set>
+		
+		<set name="Chr" baseset="Idle">
+			<head>Entrancing Ribbon</head>
+			<!--<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands></hands>
+			<legs></legs>
+			<feet></feet>
+			<waist></waist>-->
+			<ring1>Hope Ring +1</ring1>
+			<ring2>Hope Ring +1</ring2>
+			<!--<back></back>-->
+		</set>
+		
 		<include>
 		</include>
 	</sets>
@@ -67,7 +272,7 @@
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
-		<if p_status="engaged"><equip set="tp" /></if>
+		<if p_status="engaged"><equip set="Idle" /></if>
 		<else><equip set="Idle" /></else>
 	</idlegear>
 	<preranged>
@@ -77,21 +282,36 @@
 	<premagic>
 	</premagic>
 	<midmagic>
-		<if ad_name="Sandspin|Queasyshroom|Sheep Song|Cursed Sphere|Blastbomb|Soporific|Bomb Toss"><equip set="Int" />
-			<if ad_name="Sandspin"><addtochat>Amorphs -> Strong=Birds, Weak=Aquans</addtochat></if>
-			<if ad_name="Queasyshroom|Soporific"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>
-			<if ad_name="Sheep Song"><addtochat>Beasts -> Strong=Lizards, Weak=Plantoids</addtochat></if>
-			<if ad_name="Cursed Sphere"><addtochat>Vermin -> Strong=Plantoids, Weak=Lizards</addtochat></if>
+		<if ad_name="Self-Destruct"><addtochat>Arcana = Undead</addtochat></if>
+		
+		<if ad_name="Battle Dance|Uppercut"><equip set="Str" />
+			<if ad_name="Uppercut"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>			
 		</if>
 		
-		<if ad_name="Pollen"><equip set="MndVit|Healing Breeze" /></if>
-		
-		<if ad_name="Blood Drain">
-			<if ad_name="Blood Drain"><addtochat>Birds -> Strong=Aquans, Weak=Amorphs</addtochat></if>
-		</if>
-		
-		<if ad_name="Foot Kick"><equip set="StrDex" />
+		<if ad_name="Foot Kick|Smite of Rage"><equip set="StrDex" />
 			<if ad_name="Foot Kick"><addtochat>Beasts -> Strong=Lizards, Weak=Plantoids</addtochat></if>
+			<if ad_name="Smite of Rage"><addtochat>Arcana = Undead</addtochat></if>
+		</if>
+		
+		<if ad_name="Pinecone Bomb"><equip set="StrAgi" />
+			<if ad_name="Pinecone Bomb"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>
+		</if>
+		
+		<if ad_name="Head Butt|Mandibular Bite"><equip set="StrInt" />
+			<if ad_name="Mandibular Bite"><addtochat>Vermin -> Strong=Plantoids, Weak=Lizards</addtochat></if>
+		</if>
+		
+		<if ad_name="Screwdriver"><equip set="StrMnd" />
+			<if ad_name="Screwdriver"><addtochat>Aquans -> Strong=Amorphs, Weak=Birds</addtochat></if>
+		</if>
+		
+		<if ad_name="Claw Cyclone|Sickle Slash"><equip set="Dex" />
+			<if ad_name="Claw Cyclone"><addtochat>Beasts -> Strong=Lizards, Weak=Plantoids</addtochat></if>
+			<if ad_name="Sickle Slash"><addtochat>Vermin -> Strong=Plantoids, Weak=Lizards</addtochat></if>
+		</if>
+		
+		<if ad_name="Terror Touch"><equip set="DexInt" />
+			<if ad_name="Terror Touch"><addtochat>Undead = Arcana</addtochat></if>
 		</if>
 		
 		<if ad_name="Power Attack|Sprout Smack"><equip set="Vit" />
@@ -99,31 +319,44 @@
 			<if ad_name="Sprout Smack"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>
 		</if>
 		
-		<if ad_name="Wild Oats|Feather Storm|Helldive"><equip set="Agi" />
+		<if ad_name="Grand Slam"><equip set="VitIntMndChr" />
+		</if>
+		
+		<if ad_name="Wild Oats|Feather Storm|Helldive|Jet Stream"><equip set="Agi" />
 			<if ad_name="Wild Oats"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>
-			<if ad_name="Helldive"><addtochat>Birds -> Strong=Aquans, Weak=Amorphs</addtochat></if>
+			<if ad_name="Helldive|Jet Stream"><addtochat>Birds -> Strong=Aquans, Weak=Amorphs</addtochat></if>
 		</if>
 		
-		<if ad_name="Battle Dance"><equip set="Str" />
+		<if ad_name="Sandspin|Queasyshroom|Sheep Song|Cursed Sphere|Blastbomb|Soporific|Bomb Toss|Sound Blast|Chaoctic Eye|Blank Gaze|Venom Shell|MP Drainkiss|Stinking Gas|Blood Drain|Digest|Geist Wall|Awful Eye|Blood Saber|Jettatura|Ice Break|Frightful Roar|Cold Wave|Filamented Hold"><equip set="Int" />
+			<if ad_name="Sandspin|MP Drainkiss"><addtochat>Amorphs -> Strong=Birds, Weak=Aquans</addtochat></if>
+			<if ad_name="Queasyshroom|Soporific"><addtochat>Plantoids -> Strong=Beasts, Weak=Vermin</addtochat></if>
+			<if ad_name="Sheep Song|Chaoctic Eye|Blank Gaze"><addtochat>Beasts -> Strong=Lizards, Weak=Plantoids</addtochat></if>
+			<if ad_name="Cursed Sphere|Filamented Hold"><addtochat>Vermin -> Strong=Plantoids, Weak=Lizards</addtochat></if>
+			<if ad_name="Sound Blast|Jettatura"><addtochat>Birds -> Strong=Aquans, Weak=Amorphs</addtochat></if>
+			<if ad_name="Venom Shell"><addtochat>Aquans -> Strong=Amorphs, Weak=Birds</addtochat></if>
+			<if ad_name="Stinking Gas|Blood Saber"><addtochat>Undead = Arcana</addtochat></if>
+			<if ad_name="Blood Drain"><addtochat>Birds -> Strong=Aquans, Weak=Amorphs</addtochat></if>
+			<if ad_name="Digest"><addtochat>Amorphs -> Strong=Birds, Weak=Aquans</addtochat></if>
+			<if ad_name="Geist Wall|Awful Eye"><addtochat>Lizards -> Strong=Vermin, Weak=Beasts</addtochat></if>
+			<if ad_name="Ice Break|Cold Wave"><addtochat>Arcana = Undead</addtochat></if>
+			<if ad_name="Frightful Roar"><addtochat>Demon = Dragon</addtochat></if>
 		</if>
 		
-		<if ad_name="Head Butt"><equip set="StrInt" />
+		<if ad_name="Death Ray|Blitzstrahl"><equip set="IntMnd" />
+			<if ad_name="Death Ray"><addtochat>Amorphs -> Strong=Birds, Weak=Aquans</addtochat></if>
+			<if ad_name="Blitzstrahl"><addtochat>Arcana = Undead</addtochat></if>
 		</if>
 		
-		<if ad_name="Bludgeon"><equip set="Chr" />
-			<if ad_name="Bludgeon"><addtochat>Arcana "<->" Undead</addtochat></if>
+		<if ad_name="Poison Breath|Hecatomb Wave|Radiant Breath"><equip set="Mnd" />
+			<if ad_name="Poison Breath"><addtochat>Undead = Arcana</addtochat></if>
+			<if ad_name="Hecatomb Wave"><addtochat>Demon = Dragon</addtochat></if>
+			<if ad_name="Radiant Breath"><addtochat>Dragon = Demon</addtochat></if>
 		</if>
 		
-		<if ad_name="Claw Cyclone"><equip set="Dex" />
-			<if ad_name="Claw Cyclone"><addtochat>Beasts -> Strong=Lizards, Weak=Plantoids</addtochat></if>
-		</if>
+		<if ad_name="Pollen|Healing Breeze|Wild Carrot"><equip set="MndVit" /></if>
 		
-		<if ad_name="Poison Breath"><equip set="Mnd" />
-			<if ad_name="Poison Breath"><addtochat>Undead "<->" Arcana</addtochat></if>
-		</if>
-		
-		<if ad_name="Screwdriver"><equip set="StrMnd" />
-			<if ad_name="Screwdriver"><addtochat>Aquans -> Strong=Amorphs, Weak=Birds</addtochat></if>
+		<if ad_name="Bludgeon|Mysterious Light|Magnetite Cloud"><equip set="Chr" />
+			<if ad_name="Bludgeon|Mysterious Light"><addtochat>Arcana = Undead</addtochat></if>
 		</if>
 	</midmagic>
 	<jobability>

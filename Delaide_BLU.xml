@@ -11,7 +11,7 @@
 			<sub>Pelte</sub>
 			<range>Rogetsurin</range>
 			<head>Republic Cap</head>
-			<neck>Bird Whistle</neck>
+			<neck>Focus Collar +1</neck>
 			<lear>Energy Earring +1</lear>
 			<rear>Energy Earring +1</rear>
 			<body>Republic Harness</body>
@@ -31,9 +31,9 @@
 			<rear></rear>-->
 			<body>Nemain's Robe</body>
 			<hands>Linen Cuffs +1</hands>
-			<!--<legs></legs>
-			<feet></feet>
-			<waist></waist>-->
+			<!--<legs></legs>-->
+			<feet>Mtt. Leggings +1</feet>
+			<!--<waist></waist>-->
 			<ring1>Courage Ring +1</ring1>
 			<ring2>Courage Ring +1</ring2>
 			<!--<back></back>-->
@@ -251,8 +251,8 @@
 		
 		<set name="Chr" baseset="Idle">
 			<head>Entrancing Ribbon</head>
-			<!--<neck></neck>
-			<lear></lear>
+			<neck>Bird Whistle</neck>
+			<!--<lear></lear>
 			<rear></rear>
 			<body></body>
 			<hands></hands>

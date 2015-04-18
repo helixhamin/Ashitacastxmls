@@ -70,18 +70,35 @@
 			<waist>Resolute Belt</waist>
 			<feet>Koga Kyahan</feet>
 		</set>
+        <set name="Night" baseset="Stand"> <!--Night specific gear-->
+            <head></head>
+			<neck></neck>
+			<lear></lear>
+			<rear></rear>
+			<body></body>
+			<hands>Koga Tekko</hands>
+			<lring></lring>
+			<rring></rring>
+			<back></back>
+			<waist></waist>
+			<legs></legs>
+			<feet>Ninja Kyahan</feet>
+        </set>
 	</sets>
 	
 	<idlegear>
-		<if p_status="engaged"><equip set="tp" /></if>
+		<if p_status="engaged"><equip set="tp" />
+            <if e_time="<6.00|>18.00"><equip><hands>Koga Tekko</hands></equip><addtochat>Triggered time</addtochat></if>
+        </if>
 		<else><equip set="Stand" />
-			<if e_time="<6.00|>18.00"><equip><feet>Ninja Kyahan</feet></equip><addtochat>Triggered time</addtochat></if>
+			<if e_time="<6.00|>18.00"><equip set="Night" /><addtochat>Triggered time</addtochat></if>
 		</else>
 	</idlegear>
 	
 	<midmagic>
 		<equip set="Ninjitsu" />
 		<if ad_name="Utsusemi*"><equip><waist>Resolute Belt</waist></equip></if>
+        <if e_time="<6.00|>18.00"><equip><hands>Koga Tekko</hands></equip><addtochat>Triggered time</addtochat></if>
 	</midmagic>
 	
 	<midranged>

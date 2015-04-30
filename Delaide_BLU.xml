@@ -7,7 +7,7 @@
 	</settings>
 	<sets>
 		<set name="Idle">
-			<main>Scimitar +1</main>
+			<main>Flame Sword</main>
 			<sub>Pelte</sub>
 			<range>Rogetsurin</range>
 			<head>Republic Cap</head>
@@ -61,10 +61,10 @@
 			<rear></rear>
 			<body></body>
 			<hands></hands>
-			<legs></legs>
-			<feet></feet>
-			<waist></waist>
-			<ring1></ring1>
+			<legs></legs>-->
+			<feet>Power Sandals</feet>
+			<waist>Brave Belt</waist>
+			<!--<ring1></ring1>
 			<ring2></ring2>
 			<back></back>-->
 		</set>
@@ -92,15 +92,15 @@
 			<body></body>
 			<hands></hands>
 			<legs></legs>
-			<feet></feet>
-			<waist></waist>
-			<ring1></ring1>
+			<feet></feet>-->
+			<waist>Brave Belt</waist>
+			<!--<ring1></ring1>
 			<ring2></ring2>
 			<back></back>-->
 		</set>
 		
 		<set name="StrMnd" baseset="Str">
-			<head>Traveler's Hat</head>
+			<head>Garrison Sallet</head>
 			<!--<neck></neck>
 			<lear></lear>
 			<rear></rear>
@@ -133,9 +133,9 @@
 			<!--<head></head>
 			<neck></neck>
 			<lear></lear>
-			<rear></rear>
-			<body></body>
-			<hands></hands>
+			<rear></rear>-->
+			<body>Garrison Tunica</body>
+			<!--<hands></hands>
 			<legs></legs>
 			<feet></feet>
 			<waist></waist>
@@ -160,15 +160,15 @@
 		</set>
 		
 		<set name="VitIntMndChr" baseset="Idle">
-			<head>Entrancing Ribbon</head>
+			<head>Garrison Sallet</head>
 			<neck>Armiger's Lace</neck>
 			<!--<lear></lear>
 			<rear></rear>
-			<body></body>
-			<hands></hands>
-			<legs></legs>
-			<feet></feet>
-			<waist></waist>-->
+			<body></body>-->
+			<hands>Garrison Gloves</hands>
+			<legs>Lgn. Subligar</legs>
+			<feet>Power Sandals</feet>
+			<waist>Brave Belt</waist>
 			<ring1>Stamina Ring +1</ring1>
 			<ring2>Stamina Ring +1</ring2>
 			<back>Mist Silk Cape</back>
@@ -181,32 +181,32 @@
 			<rear></rear>
 			<body></body>
 			<hands></hands>
-			<legs></legs>
-			<feet></feet>
-			<waist></waist>-->
+			<legs></legs>-->
+			<feet>Ryl.Ftm. Clogs</feet>
+			<!--<waist></waist>-->
 			<ring1>Reflex Ring +1</ring1>
 			<ring2>Reflex Ring +1</ring2>
 			<!--<back></back>-->
 		</set>
 		
 		<set name="Int" baseset="Idle">
-			<!--<head></head>
-			<neck></neck>
-			<lear></lear>
-			<rear></rear>
-			<body></body>
-			<hands></hands>
-			<legs></legs>
-			<feet></feet>
-			<waist></waist>-->
+			<head>Baron's Chapeau</head>
+			<neck>Black Neckerchief</neck>
+			<!--<lear></lear>
+			<rear></rear>-->
+			<body>Baron's Saio</body>
+			<hands>Garrison Gloves</hands>
+			<legs>Mage's Slacks</legs>
+			<feet>Garrison Boots</feet>
+			<!--<waist></waist>-->
 			<ring1>Kldg. Ring +1</ring1>
 			<ring2>Kldg. Ring +1</ring2>
 			<!--<back></back>-->
 		</set>
 		
 		<set name="IntMnd" baseset="Int">
-			<!--<head></head>
-			<neck></neck>
+			<head>Garrison Sallet</head>
+			<!--<neck></neck>
 			<lear></lear>
 			<rear></rear>
 			<body></body>
@@ -220,14 +220,14 @@
 		</set>
 		
 		<set name="Mnd" baseset="Idle">
-			<head>Traveler's Hat</head>
+			<head>Garrison Sallet</head>
 			<neck>Justice Badge</neck>
 			<!--<lear></lear>
-			<rear></rear>
-			<body></body>-->
+			<rear></rear>-->
+			<body>Baron's Saio</body>
 			<hands>Zealot's Mitts</hands>
-			<!--<legs></legs>
-			<feet></feet>-->
+			<!--<legs></legs>-->
+			<feet>Garrison Boots</feet>
 			<waist>Friar's Rope</waist>
 			<ring1>Trq. Ring +1</ring1>
 			<ring2>Trq. Ring +1</ring2>
@@ -250,12 +250,12 @@
 		</set>
 		
 		<set name="Chr" baseset="Idle">
-			<head>Entrancing Ribbon</head>
+			<head>Noble's Ribbon</head>
 			<neck>Bird Whistle</neck>
 			<!--<lear></lear>
-			<rear></rear>
-			<body></body>
-			<hands></hands>
+			<rear></rear>-->
+			<body>Garrison Tunica</body>
+			<!--<hands></hands>
 			<legs></legs>
 			<feet></feet>
 			<waist></waist>-->

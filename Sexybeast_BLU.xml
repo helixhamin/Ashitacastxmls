@@ -7,10 +7,10 @@
 	</settings>
 	<sets>
 		<set name="Idle">
-			<main>Flame Sword</main>
-			<sub>Pelte</sub>
+			<!--<main>Flame Sword</main>
+			<sub>Pelte</sub>-->
 			<range>Rogetsurin</range>
-			<head>Republic Cap</head>
+			<head>Emperor Hairpin</head>
 			<neck>Focus Collar +1</neck>
 			<lear>Energy Earring +1</lear>
 			<rear>Energy Earring +1</rear>
@@ -21,7 +21,7 @@
 			<waist>Warrior's Belt +1</waist>
 			<ring1>Balance Ring +1</ring1>
 			<ring2>Balance Ring +1</ring2>
-			<back>Besieger Mantle</back>
+			<back>Nomad's Mantle +1</back>
 		</set>
 		
 		<set name="Str" baseset="Idle">
@@ -70,8 +70,8 @@
 		</set>
 		
 		<set name="StrAgi" baseset="Str">
-			<head>San. Bandana</head>
-			<!--<neck></neck>
+			<!--<head></head>
+			<neck></neck>
 			<lear></lear>
 			<rear></rear>
 			<body></body>
@@ -175,7 +175,7 @@
 		</set>
 		
 		<set name="Agi" baseset="Idle">
-			<head>San. Bandana</head>
+			<!--<head></head>-->
 			<neck>Wing Pendant</neck>
 			<!--<lear></lear>
 			<rear></rear>
@@ -272,6 +272,11 @@
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
+        <if p_subjob="NIN">
+            <equip><sub>Nadrs</sub></equip>
+        <else>
+            <equip><sub>Pelte</sub></equip></else>
+        </if>
 		<if p_status="engaged"><equip set="Idle" /></if>
 		<else><equip set="Idle" /></else>
 	</idlegear>
